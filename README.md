@@ -1,14 +1,38 @@
-# Welcome to your CDK TypeScript project
+# REST API for an imaginary healthcare system
 
-This is a blank project for CDK development with TypeScript.
+My assignment is focused around creating a REST API for an imaginary healthcare system. The API will be able to perform CRUD operations on the Patient entities.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Schema
+The following is the schema for the Patient entity:
+```
+  id: number,
+  first_name: string,
+  surname: string,
+  PPSN: string,
+  age: number,
+  sex: boolean, (true = female, false = male)
+  personal_phone: number,
+  emergency_contact_phone: number,
+  date_most_recently_admitted: string,
+  ailments: string[ ],
+  health_conditions: string[ ],
+  blood_type: string,
+  hospital_visits_count: number
 
-## Useful commands
+```
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Endpoints
+
+GET /patients
+
+GET /patients/:id
+
+POST /patients
+
+PUT /patients/:id
+
+DELETE /patients/:id
+
+## Usage
+
+
