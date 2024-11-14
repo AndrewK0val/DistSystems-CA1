@@ -227,3 +227,9 @@ export const patients : Patient[] = [
         "hospital_visits_count": 5
       }
 ]
+
+
+
+export const doctors: Doctors[] = [
+  {}
+]

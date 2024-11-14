@@ -21,6 +21,14 @@ The following is the schema for the Patient entity:
 
 ```
 
+And another entity for hospitals:
+```
+  hospital_id: number,
+  hospital_name: string,
+  address: string,
+  patient_capacity: number
+```
+
 ## Endpoints
 
 GET /patients

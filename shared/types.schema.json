@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "ConfirmSignUpBody": {
+            "additionalProperties": false,
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "code",
+                "username"
+            ],
+            "type": "object"
+        },
+        "Hospital": {
+            "additionalProperties": false,
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "hospital_id": {
+                    "type": "number"
+                },
+                "hospital_name": {
+                    "type": "string"
+                },
+                "patient_capacity": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "address",
+                "hospital_id",
+                "hospital_name",
+                "patient_capacity"
+            ],
+            "type": "object"
+        },
+        "Patient": {
+            "additionalProperties": false,
+            "properties": {
+                "PPSN": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "number"
+                },
+                "ailments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "blood_type": {
+                    "type": "string"
+                },
+                "date_most_recently_admitted": {
+                    "type": "string"
+                },
+                "emergency_contact_phone": {
+                    "type": "number"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "health_conditions": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hospital_visits_count": {
+                    "type": "number"
+                },
+                "id": {
+                    "type": "number"
+                },
+                "personal_phone": {
+                    "type": "number"
+                },
+                "sex": {
+                    "type": "boolean"
+                },
+                "surname": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "PPSN",
+                "age",
+                "ailments",
+                "blood_type",
+                "date_most_recently_admitted",
+                "emergency_contact_phone",
+                "first_name",
+                "health_conditions",
+                "hospital_visits_count",
+                "id",
+                "personal_phone",
+                "sex",
+                "surname"
+            ],
+            "type": "object"
+        },
+        "SignInBody": {
+            "additionalProperties": false,
+            "properties": {
+                "password": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "password",
+                "username"
+            ],
+            "type": "object"
+        },
+        "SignUpBody": {
+            "additionalProperties": false,
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "email",
+                "password",
+                "username"
+            ],
+            "type": "object"
+        }
+    }
+}
+
