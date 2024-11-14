@@ -31,7 +31,7 @@ export class DistSystemsCa1Stack extends cdk.Stack {
       "GetPatientById",
       {
         architecture: lambda.Architecture.ARM_64,
-        reuntime: lambda.Runtime.NODEJS_16_X,
+        runtime: lambda.Runtime.NODEJS_16_X,
         entry: `${__dirname}/../lambdas/getPatientById.ts`,
         timeout: cdk.Duration.seconds(10),
         memorySize: 128,
@@ -48,7 +48,7 @@ export class DistSystemsCa1Stack extends cdk.Stack {
       "GetAllPatientsFn",
       {
         architecture: lambda.Architecture.ARM_64,
-        reuntime: lambda.Runtime.NODEJS_16_X,
+        runtime: lambda.Runtime.NODEJS_16_X,
         entry: `${__dirname}/../lambdas/getAllPatients.ts`,
         timeout: cdk.Duration.seconds(10),
         memorySize: 128,
